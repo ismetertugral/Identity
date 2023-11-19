@@ -30,7 +30,7 @@ builder.Services.ConfigureApplicationCookie(opt =>
 
 builder.Services.AddDbContext<IEContext>(opt =>
 {
-    opt.UseSqlServer("server=ISMETERTUGRALNB\\SQLEXPRESS; database=IdentityDb; integrated security=true; TrustServerCertificate=True;");
+    opt.UseSqlServer("server=(localdb)\\MSSQLLocalDB; database=IdentityDb; integrated security=true; TrustServerCertificate=True;");
 });
 
 builder.Services.AddControllersWithViews();
